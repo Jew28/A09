@@ -29,6 +29,7 @@
   --mid-menu-color: antiquewhite;
   --dark-menu-color: black;
   --accent-color: #333;
+  --gradient-color: #f6bb73;
 }
 .menu {
   margin: 0;
@@ -105,16 +106,16 @@ header {
 	border-bottom: 2px solid var(--accent-color);
 	background-image: linear-gradient(
 	    30deg, var(--gradient-color) 0%, white 30%, white 65%, var(--gradient-color) 100%);
-	& h2 {
+	h2 {
 		font-size: 175%;
 		padding: .5em 0 0 0;
 	}
-	& h3 {
+	h3 {
 		font-size: 130%;
 		font-style: italic;
 		padding-bottom: 1em;
 	}
-	& img {
+	img {
 		width: clamp(40px, 15%, 80px);
 		float: left;
 		margin: .75em 1em;
@@ -130,7 +131,7 @@ main {
 		font-style: italic;
 		padding-left: 1em;
 	}
-	& h3 + img { /* speaker images */
+	 h3 + img { /* speaker images */
 		width: clamp(40px, 50%, 75px);
 		border: 4px double var(--accent-color);
 		border-radius: 10px;
@@ -141,7 +142,7 @@ main {
 section {
 	flex-basis: 75%;
 	padding-left: .5em;
-	& img {
+	img {
 		width: clamp(100px, 50%, 250px);
 		float: right;
 		margin: 0 1em .25em;
@@ -157,7 +158,7 @@ aside {
 /* the styles for the footer */
 footer {
 	background-color: var(--accent-color);
-	& p {
+	p {
 		text-align: center;
 		color: white;
 		padding: 1em 0;
@@ -171,10 +172,10 @@ footer {
 	padding: .5em 0 1em;
 }
 .speaker {
-	& h1 {
+	h1 {
 		color: var(--accent-color);
 	}
-	& h2 {
+	h2 {
 		color: black;
 	}
 	& p {
@@ -185,5 +186,6 @@ footer {
 	font-size: 125%;
 
 }
+
 
 
