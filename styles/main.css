@@ -32,9 +32,11 @@
   --gradient-color: #f6bb73;
 }
 .menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+flex-wrap: wrap;
 }
 .menu > li:first-child a {
   margin-left: 0;
@@ -42,8 +44,12 @@
 .menu > li:last-child a {
   margin-right: 0;
 } 
+
+.menu > li {
+  flex-basis: 20%;
+  text-align: center;
+}
 	
-	--gradient-color: #f6bb73;
 }
 
 
@@ -106,20 +112,19 @@ header {
 	border-bottom: 2px solid var(--accent-color);
 	background-image: linear-gradient(
 	    30deg, var(--gradient-color) 0%, white 30%, white 65%, var(--gradient-color) 100%);
-	h2 {
-		font-size: 175%;
-		padding: .5em 0 0 0;
-	}
-	h3 {
-		font-size: 130%;
-		font-style: italic;
-		padding-bottom: 1em;
-	}
-	img {
-		width: clamp(40px, 15%, 80px);
-		float: left;
-		margin: .75em 1em;
-	}
+	header h2 {
+  font-size: 175%;
+  padding: .5em 0 0 0;
+}
+header h3 {
+  font-size: 130%;
+  font-style: italic;
+  padding-bottom: 1em;
+}
+header img {
+  width: clamp(40px, 15%, 80px);
+  float: left;
+  margin: .75em 1em;
 }
 
 /* the styles for the main content */
@@ -186,6 +191,7 @@ footer {
 	font-size: 125%;
 
 }
+
 
 
 
